@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>UPDATE MALL OPENINGS</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_table }}
+      MALLNAME:<input type="text" name="mallname" value="{{malls.mallname}}"><br>
+      MALLLOCATION:<input type="text" name="malllocation" value="{{malls.malllocation}}"><br>
+      MALLBUDGET:<input type="text" name="mallbudget" value="{{malls.mallbudget}}"><br>
+      MALLOPENINGDATE:<input type="text" name="openingdate" value="{{malls.openingdate}}"><br>
+      MALLOPENINGGUEST:<input type="text" name="openingguest" value="{{malls.openingguest}}"><br>
+      <input type="submit" name="" value="save">
+
+    </form>
+
+  </body>
+</html>

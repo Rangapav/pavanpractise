@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>ADD MALLS LIST</h1>
+    <form method="post">
+    <table>
+      {{y.as_table}}
+      {% csrf_token %}
+    </table><br>
+    <input type="submit" value="save">
+    </form>
+  </body>
+</html>

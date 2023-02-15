@@ -1,0 +1,9 @@
+{% block body_block %}
+    <h2> Confirm student Delete ? </h2>
+<form method="post">
+  <input type="Submit" value="Confirm">
+  <a href="{{student.id}}">Cancel</a>
+  {% csrf_token %}
+  </form>
+
+{% endblock %}
