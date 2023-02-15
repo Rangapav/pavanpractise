@@ -1,0 +1,11 @@
+{% block body_block %}
+    <ol>
+    <h2>Product Detail View</h2>
+    <h2><li>fname = {{student.fname}}</li></h2>
+    <h2><li>lname = {{student.lname}}</li></h2>
+    <h2><li>location = {{student.location}}</li></h2>
+    <h2><li>mno = {{student.mno}}</li></h2><br><br>
+    <h2><li><a href="/update/{{student.pk}}">Update</a></li></h2>
+    <h2><li><a href="/delete/{{student.pk}}">Delete</a></li></h2>
+    </ol>
+  {% endblock %}

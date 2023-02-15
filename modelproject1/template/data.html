@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>STUDENT DETAILS</h1>
+    {% if y %}
+     <table border=2px>
+       <thead>
+         <th>FIRST NAME</th>
+         <th>SECOND NAME</th>
+         <th>AGE</th>
+         <th>LOCATION</th>
+         <th>MOBILENO</th>
+       </thead>
+       {% for i in  y %}
+       <tr>
+         <td>{{i.fname}}</td>
+         <td>{{i.lname}}</td>
+         <td>{{i.age}}</td>
+         <td>{{i.location}}</td>
+         <td>{{i.mobileno}}</td>
+       </tr>
+       {% endfor %}
+     </table>
+     {% else %}
+<p>NO DATA IS AVAILABLE</p>
+{% endif %}
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO PROJECT_K</h1>
+    {% if y %}
+    <table border="2" >
+      <thead>
+        <th>PROJECT NAME</th>
+        <th>LOCATION</th>
+        <th>ASSIGNMED TO</th>
+        <th>BUDGET</th>
+        <th>START DATE</th>
+        <th>END DATE</th>
+      </thead>
+      {% for r in y %}
+      <tr>
+        <td>{{r.projectname}}</td>
+        <td>{{r.location}}</td>
+        <td>{{r.assignedto}}</td>
+        <td>{{r.budget}}</td>
+        <td>{{r.startdate}}</td>
+        <td>{{r.enddate}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p>NO DATA FOUND</p>
+    {% endif %}
+
+  </body>
+</html>

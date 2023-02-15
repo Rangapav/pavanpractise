@@ -1,0 +1,16 @@
+table{border: 5px solid red;
+      align:center;
+      background-color:yellow;}
+body{
+    color:blue;
+    text-align:center;
+}
+img{
+  height:200px;
+  width:200px;
+  border-radius: 100px;
+}
+h1{color:green;}
+div{
+  display:flex;
+}

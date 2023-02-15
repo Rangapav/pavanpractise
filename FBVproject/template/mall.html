@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "style.css"%}">
+    <title></title>
+  </head>
+  <body>
+    <h1><u>MALLS LIST</u></h1>
+    <table border='50px'>
+      <thead>
+        <th>ID</th>
+        <th>MALL NAME</th>
+        <th>MALL LOCATION</th>
+        <th>MALL BUGET</th>
+        <th>MALL OPENING DATE</th>
+        <th>MALL OPENING GUEST</th>
+        <th>DEL DATA</th>
+        <th>UPD DATA</th>
+        </thead>
+        {% for i in y %}
+        <tr>
+          <td>{{i.id}}</td>
+          <td>{{i.mallname}}</td>
+          <td>{{i.malllocation}}</td>
+          <td>{{i.mallbudget}}</td>
+          <td>{{i.openingdate}}</td>
+          <td>{{i.openingguest}}</td>
+          <td><a href="/del/{{i.id}}">DELETE</td>
+          <td><a href="/upd/{{i.id}}">UPDATE</td>
+          </tr>
+          {% endfor %}
+          </table>
+    <a href="/add">ADD LIST</a>
+    <br><br><br>
+    <div>
+      <caption>CARS SHOWROOM</caption>
+      <img src="{%static "cars.jpg"%}"/><br>
+      <caption>BOOKS SHOWROOM</caption>
+      <img src="{%static "books.jpg"%}"/>
+      <caption>BIKES SHOWROOM</caption>
+      <img src="{%static "bike.jpg"%}"/>
+      <caption>CLOTHES MALL</caption>
+      <img src="{%static "CLOTHES.jpg"%}"/>
+    </div>
+
+  </body>
+</html>
