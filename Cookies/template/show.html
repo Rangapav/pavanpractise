@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if request.COOKIES %}
+    <table border="4">
+      <thead>
+        <th>Product Name</th>
+        <th>Product Price</th>
+      </thead>
+      {% for key,value in request.COOKIES.items %}
+      <tr>
+        <td>{{key}}</td>
+        <td>{{value}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p>No Records Found</p>
+    {% endif %}
+
+  </body>
+</html>
