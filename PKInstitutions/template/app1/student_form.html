@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{%static "style3.css"%}/">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <a href="/Home/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/courses/">Course Offered</a>
+      <a href="/Create/">Admissions</a>
+      <a href="/Achievements/">Achievements</a>
+      <a href="/Contact/">contact Us</a>
+    </nav>
+  <marquee > HELLO WELCOME TO PAVAN GROUP OF INSTITUTION PLEASE REGISTER SEATS ARE LIMITED  </marquee>
+    <h2>WELCOME TO PK GROUP OF INSTITUTIONS <br>WHERE YOU ACHIEVE YOUR GOAL</h2><hr>
+    <h2>INDIA'S NO.1 ONLINE & OFFLINE COACHING CENTER</h2><hr>
+    <h2>Register First And Get first priority<br> Seats are Limited</h2><hr>
+    <form class="pavan"  method="post">
+      <table border='3'>
+        {{form.as_p}}
+        {% csrf_token %}
+      </table>
+      <div >
+        <script type="text/javascript">
+         function func(){
+                alert("Your Data Added Succesfully...");
+
+         }
+        </script>
+        <input type="Submit" name="" value="Register" onclick="func()">
+
+      </div>
+
+
+    </form>
+
+  </body>
+</html>
