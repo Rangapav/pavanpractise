@@ -1,0 +1,42 @@
+marquee{
+  background-color: pink;
+  direction:right;
+  height:40px;
+  font-size: 20px;
+}
+nav a:hover{
+background-color:green;}
+header{
+background:linear-gradient(180deg,green,yellow);
+color:white;
+padding-left:100px;
+}
+nav{background-color:gray;
+padding:30px;
+font-size:20px;}
+nav a{
+color:orange;
+text-decoration:none;
+padding:5px 20px;}
+
+h2{
+  text-align : center;
+  color : red;
+  background:linear-gradient(180deg,green,yellow);
+  text-decoration: inherit;
+  font-size: 25px;
+  font-family: serif;
+  font-style: oblique;
+  width:400px;
+  margin-left: 500px;
+}
+body{
+    background: url("../app1/pa.jpg") 100%  no-repeat fixed;
+  }
+h3{
+  background:transparent;
+  color:brown;
+  font-size: 40px;
+  width:800px;
+  margin-top: 150px;
+}

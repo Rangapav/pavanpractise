@@ -1,0 +1,59 @@
+marquee{
+  background-color: pink;
+  direction:right;
+  height:40px;
+  font-size: 20px;
+}
+nav a:hover{
+background-color:green;}
+header{
+background:linear-gradient(180deg,green,yellow);
+color:white;
+padding-left:100px;
+}
+nav{background-color:gray;
+padding:20px;
+font-size:20px;}
+nav a{
+color:orange;
+text-decoration:none;
+padding:5px 20px;}
+.pavan{
+  text-align:center;
+  background: transparent;
+  font-style: italic;
+  font-size: 15px;
+  font-family: fantasy;
+  color:blue;
+  border:2px solid white;
+  width:500px;
+  margin-left:350px;
+
+}
+submit{
+  border-radius:2px solid white;
+  background:transparent;
+}
+div:hover{
+  border:2px solid white;
+}
+hr{
+  width:200px;
+  hieght:20px;
+  background-color:green;
+}
+h2{
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: bolder;
+  font-variant-ligatures: normal;
+  text-align: center;
+  color: green;
+}
+body{
+  background: url("../form.webp") 100%  no-repeat fixed;
+}
+/* table{
+  text-align:center;
+  padding:5x;
+} */

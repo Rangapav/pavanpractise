@@ -1,0 +1,59 @@
+marquee{
+  background-color: pink;
+  direction:right;
+  height:40px;
+  font-size: 20px;
+}
+nav a:hover{
+background-color:green;}
+header{
+background:linear-gradient(180deg,green,yellow);
+color:white;
+padding-left:100px;
+}
+nav{background-color:gray;
+padding:30px;
+font-size:20px;}
+nav a{
+color:orange;
+text-decoration:none;
+padding:5px 20px;}
+h2{
+  /* background-color: lightgreen; */
+  padding-left:250px;
+  color:blue;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: serif;
+  font-size: 30px;
+  width:50%;
+  padding-top:30px;
+  text-align: center;
+  margin:40px;
+}
+p{
+  /* background-color:lightyellow; */
+  color:pink;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: serif;
+  font-size: 30px;
+  width:50%;
+  padding-top:30px;
+  text-align: center;
+  margin:40px;
+
+}
+.pavan{
+  display:flex;
+  background: transparent;
+  }
+img{
+  width:45%;
+  height:50%;
+  padding-bottom: 100px;
+  background: transparent;
+}
+body{
+  background: url("../app1/bg.jpg") 100%  no-repeat fixed;
+}
