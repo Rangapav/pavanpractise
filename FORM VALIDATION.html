@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>FORM VALIDATIONS</title>
+</head>
+<body>
+<form name="f1" action="pr.html" method="post" onsubmit="return f1()">
+ENTER YOUR NAME=
+<input type="text" name="name" placeholder="ENTER YOUR NAME"/><br>
+ENTER YOUR MOBILENO=
+<input type="no" name="mobileno" /><br>
+ENTER YOUR EMAIL=
+<input type="text" name="email" placeholder="ENTER YOUR EMAIL"/><br>
+CONFIRM YOUR EMAIL=
+<input type="text" name="email" placeholder="CONFIRM YOU YOUR EMAIL"/><br>
+ENTER YOUR DATE OF BIRTH=
+<input type="date" name="dob" /><br>
+ENTER YOUR PASSWORD=
+<input type="text" name="password"/><br>
+CONFIRM YOUR PASSWORD=
+<input type="text" name="password"/><br>
+<input type="submit">
+</form>
+<script>
+function f1(){
+var name=document.f1.name.value;
+var mno=document.f1.mobileno.value;
+var femail=document.f1.email.value;
+var semail=document.f1.email1.value;
+var crdate=new Date();
+var dob=Date(document.f1.dob.value);
+var fp=document.f1.password.value;
+var sp=document.f1.password1.value;
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6 && fp == sp){  
+  alert("Password must be at least 6 characters long & same!.");  
+  return false;  
+}else if(femail == semail)
+{
+  alert("EMAIL SHOULD BE SAME");
+  return false;
+}else if (dob == crdate){
+  alert("please enter valid dob");
+  return false;
+}else if(mno==null ||mno.length>10){
+alert("mobile no must contain 10 numbers");
+return false;
+  } 
+}  
+</script>
+</body>
+</html>
