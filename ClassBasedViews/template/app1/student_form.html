@@ -1,0 +1,10 @@
+{% block body_block %}
+    <h3>Product Form</h3>
+    <form  method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+
+      <input type="submit" name="" value="Save">
+    </form>
+
+{% endblock %}
