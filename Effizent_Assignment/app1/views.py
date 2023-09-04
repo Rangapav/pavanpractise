@@ -20,7 +20,7 @@ def Form(request):
                       f'Date_of_Birth:{form.cleaned_data["Date_of_Birth"]}\n'\
                       f'Register_date:{form.cleaned_data["Register_date"]}\n'\
                       f'Message: {form.cleaned_data["Message"]}'
-            from_email = 'somadipavan@gmail.com'
+            from_email = '' # Enter your Email
             recipient_list = [form.cleaned_data["Email"]]
             send_mail(subject, message, from_email, recipient_list)
             return redirect('Confirmation')
