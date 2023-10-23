@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       div{font-size:30px;}
+.p{
+background:pink;}
+       button{
+              margin-left:40px;}
+       #booking4{
+                 float:right;
+                 margin:50px;
+                 transform: translate(-10px,-260px);
+                 }
+      .booking{
+             padding:20px;
+             background: linear-gradient(white, blue);
+width:300px;}
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .popup {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1.25);
+            width: 300px;
+            background: white;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0.15);
+            border-radius: 10px;
+            transition: top 0ms ease-in-out, opacity 200ms ease-in-out, transform 200ms ease-in-out;
+            z-index: 0; 
+        }
+        .popup.active {
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            transition: top 0ms ease-in-out, opacity 200ms ease-in-out, transform 200ms ease-in-out;
+            z-index: 1; 
+        }
+        .popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 15px;
+            height: 15px;
+            background: white;
+          padding:10px;
+            color: red;
+            text-align: center;
+            line-height: 15px;
+            cursor: pointer;
+        }
+        .popup .form h2 {
+            text-align: center;
+            color: black;
+            margin: 10px 0px 20px;
+            font-size: 25px;
+        }
+        .popup .form .form-element {
+            margin: 15px 0px;
+        }
+        label {
+            font-size: 14px;
+            color: blue;
+           display:flex;
+           padding:5px 0px 5px 5px;
+           text-align:center;
+        }
+        .popup .form .form-element button {
+            width: 50%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: linear-gradient(orange, red);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        header {
+            background:linear-gradient(orange,yellow);
+            color: white;
+            padding: 15px;
+           font-size:40px;
+        }
+        a{
+            text-align: center;
+            padding:50px;
+font-size:20px;
+        }
+          
+
+    </style>
+</head>
+<body>
+    <header><b>LOGO</b></header>
+    <br><br><br><ol>
+    <li><div class="booking" id="booking1" onclick="openPopup('popup-booking1')">Button1</div></li>
+
+    <li><div class="booking" id="booking2" onclick="openPopup('popup-booking2')"> Button2</div></li>
+
+    <div id="popup-booking2" class="popup">
+        <div class="close-btn" onclick="closePopup('popup-booking2')">&times;</div>
+        <div class="form">
+            <h2>Button2</h2>
+            <div class="form-element">
+                <ol>
+                <li><input type="Number"placeholder="Enter Phonenumber"></li>
+                <li><input type="Password"placeholder="Enter Password"></li
+>
+                </ol>  
+
+                <button>LogIn</button><br><br>
+                <a href="#">Forgot Password</a>
+            </div>
+        </div>
+    </div>
+
+    <li><div class="booking" id="booking3" onclick="openPopup('popup-booking3')"> Buttton3</div></li></ol>
+
+    <div id="popup-booking3" class="popup">
+        <div class="close-btn" onclick="closePopup('popup-booking3')">&times;</div>
+        <div class="form">
+            
+                <h2>Button3</h2>
+            <div class="form-element">
+                <ol>
+                <li><input type="text"placeholder="ID"></li>
+                <li><input type="Password"placeholder="Enter Password"></li>
+                </ol>  
+               <button>LogIn</button>
+                <a href="#">Forgot Password</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking" id="booking4" onclick="openPopup('popup-booking4')">Button4</div>
+
+    <div id="popup-booking4" class="popup">
+        <div class="close-btn" onclick="closePopup('popup-booking4')">&times;</div>
+        <div class="form">
+            <div class="form-element">
+                <ol class="p">
+                <li></li>
+<li></li>
+<li></li>
+                </ol>  
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(popupId) {
+            document.getElementById(popupId).classList.add("active");
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).classList.remove("active");
+        }
+    </script>
+</body>
+</html>
